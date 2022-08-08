@@ -1,4 +1,4 @@
-## A simple component has been written that unloads data about a random person from the service.
+## A simple component has been written that unloads data about a random person from the service to the two simple tables - Customers and Users.
 
 The task will have several tasks that need to be solved sequentially. In total, all tasks should not take more than 1 hour.
 The case tests the candidate's ability to work in a team, understand documentation, use Internet searches, decompose a problem, and ask the right questions.
@@ -6,11 +6,12 @@ Those are simple tasks, there is no catch in them. We don't test a person's skil
 
 ### The first task sounds like this:
 
-Users want to see a list of 100 employees with their number at the beginning of a column (named it Pin) in order to conduct their workflow with them.
+Business want to see a list of 100 Customers with their number at the beginning of a column (named it Pin) in order to conduct their workflow with them.
+Tab Users should not be affected.
 
 ---
 
-## Написан простой компонент, который выгружает с сервиса данные о случайном человеке.
+## Написан простой компонент, который выгружает с сервиса данные о случайном человеке из специального фасада и отображает их в двух простых таблицах - Customers и Users.
 
 В задаче будет несколько задач, которые нужно решить последовательно. Суммарно на все задачи не должно уйти больше 1 часа.
 Задание проверяет способность кандидата работать в команде, разбираться в документации, пользоваться поиском в интернете, декомпозировать задачу, а также задавать нужные вопросы.
@@ -18,7 +19,8 @@ Users want to see a list of 100 employees with their number at the beginning of 
 
 ### Первое задание звучит вот так:
 
-Пользователи хотят, видеть список из 100 сотрудников с их номером в начале столбцом, чтобы проводить с ними свои операции.
+Пользователи хотят, видеть в Customers список из 100 заказчиков с их номером в начале столбцом, чтобы проводить с ними свои операции.
+Страница Users не должна пострадать.
 
 ---
 
