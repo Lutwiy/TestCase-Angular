@@ -6,7 +6,7 @@
   </tr>
   <tr>
     <td>1</td>
-    <td>{{ (data$ | async).name }}</td>
+    <td>{{ (data$ | async) && (data$ | async).name }}</td>
     <td></td>
   </tr>
 </table>
