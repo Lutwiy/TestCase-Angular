@@ -95,5 +95,5 @@ class Legends {
  * Why are we using state management in ours UI apps? State management or Redux approach is literally - global variable with static methods.
  * But we are using them. Why isn't OOP a case here?
  *
- * Maybe wise men are not so wise after all? Or there is other explanation to that?
+ * Maybe wise men are not so wise after all. Or is there another explanation for that?
  */
