@@ -52,7 +52,7 @@ class Employee {
 }
 
 /**
- * Resharper or other IDE instrument ask you to change method to static?
+ * Resharper or other IDE instrument asks you to change method to static?
  * What does it mean? Is it correct to just move logic in static layer?
  * Is "static" a part of the OOP paradigm or not?
  */
