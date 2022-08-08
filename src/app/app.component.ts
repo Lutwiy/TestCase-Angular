@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { DataService } from './data.service';
+
+interface IDataItem {
+  name: string;
+  id: number;
+}
 
 @Component({
   selector: 'my-app',
@@ -8,11 +13,20 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  public user$: Observable<string>;
+  public data$: Observable<IDataItem>;
 
   constructor(private readonly dataService: DataService) {}
 
   ngOnInit(): void {
-    this.user$ = this.dataService.get();
+    this.data$ = this.dataService.get().pipe(
+      map((result: string) => {
+        return {
+          id: 1,
+          name: result,
+        };
+      })
+    );
+
+    this.data$.subscribe();
   }
 }

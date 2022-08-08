@@ -8,11 +8,6 @@ Those are simple tasks, there is no catch in them. We don't test a person's skil
 
 Users want to see a list of 100 employees with their number at the beginning of a column (named it Pin) in order to conduct their workflow with them.
 
-Output Format:
-
-- Pin {index} {firstname} {lastname}.
-- Pin {index+1} {nextfirstname} {nextlastname}.
-
 ---
 
 ## Написан простой компонент, который выгружает с сервиса данные о случайном человеке.
@@ -24,11 +19,6 @@ Output Format:
 ### Первое задание звучит вот так:
 
 Пользователи хотят, видеть список из 100 сотрудников с их номером в начале столбцом, чтобы проводить с ними свои операции.
-
-Формат вывода:
-
-- Pin {index} {firstname} {lastname}.
-- Pin {index+1} {nextfirstname} {nextlastname}.
 
 ---
 

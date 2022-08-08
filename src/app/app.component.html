@@ -1,3 +1,12 @@
-<p>
-  {{ user$ | async }}
-</p>
+<table>
+  <tr>
+    <th>Pin</th>
+    <th>Name</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>{{ (data$ | async).name }}</td>
+    <td></td>
+  </tr>
+</table>
