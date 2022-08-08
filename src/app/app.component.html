@@ -1,12 +1,6 @@
-<table>
-  <tr>
-    <th>Pin</th>
-    <th>Name</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>{{ (data$ | async).name }}</td>
-    <td></td>
-  </tr>
-</table>
+<div class="flex">
+  <a routerLink="/customers" routerLinkActive="active">Клиенты</a>
+  <a routerLink="/users" routerLinkActive="active">Сотрудники</a>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,13 +1,29 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, CommonModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: 'customers',
+        pathMatch: 'full',
+        loadChildren: () =>
+          import('./customers/customers.module').then((x) => x.CustomersModule),
+      },
+      {
+        path: 'users',
+        pathMatch: 'full',
+        loadChildren: () =>
+          import('./users/users.module').then((x) => x.UsersModule),
+      },
+    ]),
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
