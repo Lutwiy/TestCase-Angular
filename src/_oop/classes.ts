@@ -85,15 +85,15 @@ class Legends {
  * Classes without context or logic are not OOP objects because they doesn't incapsulate anything.
  * Static logic, helpers without fields or global variables are always a bad solution.
  * We should avoid them in ours applications at the all cost. There are only problems with them.
- * 
+ *
  * So?
  *
- * Why do we use DI and try to make our classes with no context for that if it is wrong?
- * Is DI approach maybe bad solution (but a lesser evil) and we should change it?
- * Is DI is an OOP instrument?
+ * Why do we use DI and try to make our classes with no context if it is wrong?
+ * Is DI approach maybe a bad solution (but a lesser evil) and we have to replace it with something better?
+ * Is DI an OOP instrument? Why isn't OOP a case here?
  *
- * Why we are using state management in ours UI apps? State management or Redux approach is literally - global variable with static methods.
- * But we are using them.
+ * Why are we using state management in ours UI apps? State management or Redux approach is literally - global variable with static methods.
+ * But we are using them. Why isn't OOP a case here?
  *
  * Maybe wise men are not so wise after all? Or there is other explanation to that?
  */
