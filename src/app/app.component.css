@@ -1,3 +1,24 @@
 p {
   font-family: Lato;
 }
+
+.flex {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+a {
+  background: #666;
+  border: 1px solid #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+a.active {
+  border-color: red;
+}
