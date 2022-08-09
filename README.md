@@ -7,9 +7,13 @@ Those are simple tasks, there is no catch to them. We don't test person's skills
 Any code can be changed here. There are many architectural flaws in the code so that the candidate can show his knowledge during technical interview.
 Candidate can search info in web, ask for help or clarification, and do everything that is allowed in normal work.
 
+Task can be completed in 15-30 minutes. There are other tasks in the TI.
+If candidate has problems with used technologies, he can ask for help with it from the interviewer.
+
 ### The first task is the following:
 
 Business want to see a list of 100 Customers with their number at the beginning of a column (named it Pin) in order to conduct their workflow with them.
+Index number of entity should be shown in Pin Column.
 Tab Users should not be affected.
 
 ---
@@ -21,11 +25,15 @@ Tab Users should not be affected.
 Задачи простые и без подвохов. Мы не проверяем навыки человека в написании сложных алгоритмов или его способность найти подвох.
 
 Любой код задачи может быть изменен. Код специально написан не оптимально и с архитектурными недочетами, чтобы кандидат в течение интервью мог отрефакторить их.
-Кандидат может исппользовать поиск в интернете, просить помощи или пояснений у интервьюверов, и делать все, что разрешено в нормальной работе в коллективе.
+Кандидат может использовать поиск в интернете, просить помощи или пояснений у интервьюверов, и делать все, что разрешено в нормальной работе в коллективе.
+
+Задание может быть решено за 15-30 минут. Учитывайте, что есть и другие задачи, которые нужно будет выполнить в ходе ТИ.
+Если кандидат не знает используемых технологий или неуверенно чувствует себя в них, он может обратиться за помощью к интервьюверу.
 
 ### Первое задание звучит вот так:
 
 Пользователи хотят, видеть в Customers список из 100 заказчиков с их номером в начале столбцом, чтобы проводить с ними свои операции.
+В колонке Pin должен быть отображен номер строки человека в списке.
 Страница Users не должна пострадать.
 
 ---
