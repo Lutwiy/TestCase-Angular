@@ -1,10 +1,10 @@
 ## A simple component has been written that unloads data about a random person from the service to the two simple tables - Customers and Users.
 
 The task will have several tasks that need to be solved sequentially. In total, all tasks should not take more than 1 hour.
-The case tests the candidate's ability to work in a team, understand documentation, use Internet searches, decompose a problem, and ask the right questions.
-Those are simple tasks, there is no catch in them. We don't test a person's skills in writing complex algorithms and candidate's ability to find a catch.
+The case assesses candidate's ability to work in a team, understand documentation, use Internet searches, decompose a problem, and ask right questions.
+Those are simple tasks, there is no catch to them. We don't test person's skills of writing complex algorithms and candidate's ability to find a catch.
 
-### The first task sounds like this:
+### The first task is the following:
 
 Business want to see a list of 100 Customers with their number at the beginning of a column (named it Pin) in order to conduct their workflow with them.
 Tab Users should not be affected.

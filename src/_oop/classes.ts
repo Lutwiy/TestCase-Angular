@@ -3,7 +3,7 @@ type Sound = { something: any };
 type Motor = { start(): void; isStarted: boolean };
 
 /**
- * Can you say what is wrong in the implementation of the class Vehicle?
+ * Can you tell what is wrong in the implementation of the class Vehicle?
  */
 class Vehicle {
   protected position: Coordinate;
@@ -14,8 +14,8 @@ class Vehicle {
 }
 
 /**
- * Can you say what should be changed in the Car class to fix problems with SOLID?
- * Maybe there are no problems and it is the SOLID object?
+ * Can you tell what should be changed in the Car class to fix problems with SOLID?
+ * Maybe there are no problems and it is SOLID object.
  */
 class Car extends Vehicle {
   protected position: Coordinate;
@@ -41,8 +41,8 @@ class Car extends Vehicle {
 }
 
 /**
- * If we exam this class in OOP, is something wrong with the class Employee?
- * Is it an object of the OOP paradigm?
+ * If you exam this class in OOP, is something wrong with the class Employee?
+ * Is it an object of OOP paradigm?
  * When this type of classes is acceptable? How should we name them?
  */
 class Employee {
@@ -52,7 +52,7 @@ class Employee {
 }
 
 /**
- * Resharper or other IDE instrument asks you to change method to static?
+ * Resharper or other IDE instrument asks you to change method to static.
  * What does it mean? Is it correct to just move logic in static layer?
  * Is "static" a part of the OOP paradigm or not?
  */
@@ -82,17 +82,17 @@ class Legends {
 
 /**
  * Wise men said that...
- * Classes without context or logic are not OOP objects because they doesn't incapsulate anything.
+ * Classes without context or logic are not OOP objects because they don't incapsulate anything.
  * Static logic, helpers without fields or global variables are always a bad solution.
- * We should avoid them in ours applications at the all cost. There are only problems with them.
+ * We should avoid them in our applications at all costs. There are only problems with them.
  *
  * So?
  *
- * Why do we use DI and try to make our classes with no context if it is wrong?
+ * Knowing it's wrong, why do we use DI and create our classes without context?
  * Is DI approach maybe a bad solution (but a lesser evil) and we have to replace it with something better?
  * Is DI an OOP instrument? Why isn't OOP a case here?
  *
- * Why are we using state management in ours UI apps? State management or Redux approach is literally - global variable with static methods.
+ * Why are we using state management in our UI apps? State management or Redux approach is literally - global variable with static methods.
  * But we are using them. Why isn't OOP a case here?
  *
  * Maybe wise men are not so wise after all. Or is there another explanation for that?
