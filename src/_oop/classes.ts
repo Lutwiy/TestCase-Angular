@@ -1,6 +1,13 @@
+import { publishFacade } from '@angular/compiler';
+
 type Coordinate = { x: number; y: number };
 type Sound = { something: any };
 type Motor = { start(): void; isStarted: boolean };
+enum Status {
+  Draft,
+  Approved,
+  Declined,
+}
 
 /**
  * Can you tell what is wrong in the implementation of the class Vehicle?
@@ -48,7 +55,43 @@ class Car extends Vehicle {
 class Employee {
   public fullName: string;
   public pin: number;
-  public status: string;
+  public status: Status;
+  public gender: string;
+}
+
+interface IEmployeeDAL {
+  all(): Employee[];
+  one(id: string): Employee;
+  put(empoloyee: Employee): Employee;
+}
+
+class EmployeeService {
+  private dal: IEmployeeDAL;
+  public formGreeting(id: string): string {
+    const employee = this.dal.one(id);
+    return `Welcome ${employee.gender} ${employee.fullName}!`;
+  }
+
+  public getList(): string[] {
+    return this.dal.all().map((e) => `${e.pin} ${e.fullName}`);
+  }
+
+  public approve(id: string): void {
+    const employee = this.dal.one(id);
+    if (employee.status == Status.Draft) {
+      employee.status = Status.Approved;
+    }
+
+    if (employee.status == Status.Declined) {
+      throw new Error('This employee cannot be approved. He is in decline.');
+    }
+
+    this.dal.put(employee);
+  }
+
+  public put(e: Employee): void {
+    this.dal.put(e);
+  }
 }
 
 /**
@@ -56,6 +99,14 @@ class Employee {
  * What does it mean? Is it correct to just move logic in static layer?
  * Is "static" a part of the OOP paradigm or not?
  */
+
+class Book {
+  public titles: string[];
+  public FormTitles(): string[] {
+    return this.titles.map((t) => Legends.FormTitle(t));
+  }
+}
+
 class Legends {
   private list: string[];
   public Get(): string[] {
