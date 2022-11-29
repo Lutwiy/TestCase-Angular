@@ -67,8 +67,7 @@ interface IEmployeeDAL {
 
 class EmployeeService {
   private dal: IEmployeeDAL;
-  public formGreeting(id: string): string {
-    const employee = this.dal.one(id);
+  public formGreeting(employee: Employee): string {
     return `Welcome ${employee.gender} ${employee.fullName}!`;
   }
 
