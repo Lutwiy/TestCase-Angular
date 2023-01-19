@@ -1,5 +1,3 @@
-import { publishFacade } from '@angular/compiler';
-
 type Coordinate = { x: number; y: number };
 type Sound = { something: any };
 type Motor = { start(): void; isStarted: boolean };
